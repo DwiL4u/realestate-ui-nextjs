@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import Properties from '../Properties/Properties';
+
 
 type Props = {
   city: {

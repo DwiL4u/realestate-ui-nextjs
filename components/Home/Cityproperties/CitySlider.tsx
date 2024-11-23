@@ -6,6 +6,13 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import CityCard from "./CityCard";
 
+type City = {
+  id: number;
+  image: string;
+  cityName: string;
+  numberOfProperties: number;
+};
+
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -35,7 +42,7 @@ const CitySlider = () => {
       autoPlaySpeed={6000}
       infinite
     >
-      {cities.map((city: any) => {
+      {cities.map((city: City) => {
         return (
           <div key={city.id}>
                     <CityCard city={city} />

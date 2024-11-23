@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react'
-import { buildings } from '@/data/data';
 import Tilt from "react-parallax-tilt";
 import Image from 'next/image';
 
