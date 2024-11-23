@@ -18,7 +18,7 @@ const Blog = () => {
       <div className="mx-auto w-[80%]">
         <SectionHeading heading="Latest Blog" />
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 items-center mt-16">
-          {blogs.map((blog: any,i) => {
+          {blogs.map((blog: Blog,i) => {
             return (
               <div
                 key={blog.id}
