@@ -3,17 +3,18 @@ import Image from "next/image";
 import { BiCalendar, BiMessage } from "react-icons/bi";
 import { BsArrowRight } from "react-icons/bs";
 
-type BlogCardProps = {
-  blog: {
-    id: number;
-    date: string;
-    comment: string;
-    title: string;
-    shortDescription: string;
-    image: string;
-  };
+type Blog = {
+  id: number;
+  date: string;
+  comment: string;
+  title: string;
+  shortDescription: string;
+  image: string;
 };
 
+type BlogCardProps = {
+  blog: Blog;
+};
 const BlogCard = ({ blog }: BlogCardProps) => {
   return (
     <div className="bg-white overflow-hidden rounded-md">

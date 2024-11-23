@@ -3,6 +3,15 @@ import { blogs } from "@/data/data";
 import React from "react";
 import BlogCard from "./BlogCard";
 
+interface Blog {
+  id: number;
+  date: string;
+  comment: string;
+  title: string;
+  shortDescription: string;
+  image: string;
+}
+
 const Blog = () => {
   return (
     <div className="bg-gray-100 pt-16 pb-16">
@@ -14,7 +23,7 @@ const Blog = () => {
               <div
                 key={blog.id}
                 data-aos="zoom-out"
-                data-aos-delay={`{i * 150}`}
+                data-aos-delay={`${i * 150}`}
                 data-anchor-placement="top-center"
               >
                 <div className="bg-white p-4 rounded-lg shadow-md">

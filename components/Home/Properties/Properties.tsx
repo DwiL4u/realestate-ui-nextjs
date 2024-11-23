@@ -26,7 +26,7 @@ const Properties = () => {
               <div
                 key={property.id}
                 data-aos="fade-left"
-                data-aos-delay={`{i * 150}`}
+                data-aos-delay={`${i * 150}`}
                 data-anchor-placement="top-center"
               >
                 <PropertyCard property={property} />
